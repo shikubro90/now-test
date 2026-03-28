@@ -127,7 +127,7 @@ export default function Shop() {
                     <h3 className="text-2xl font-bold text-gray-800 mb-2">{flower.name}</h3>
                     <p className="text-gray-600 mb-4 line-clamp-2">{flower.description}</p>
                     <div className="flex justify-between items-center">
-                      <span className="text-2xl font-bold text-pink-500">${flower.price.toFixed(2)}</span>
+                      <span className="text-2xl font-bold text-pink-500">${(flower.price as number).toFixed(2)}</span>
                       <button className="px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all">
                         Add to Cart 🛒
                       </button>
